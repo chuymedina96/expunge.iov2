@@ -59,9 +59,6 @@
     </div><!-- /.navbar-collapse div close -->
   </div><!-- /.container-fluid close div -->
 </nav><!--NAVIGATION ENDS HERE-->
-
-
-
 <header> <!-- Header -->
   <div class="container" id="maincontent" tabindex="-1">
     <div class="row">
@@ -73,6 +70,9 @@
           </div>
           <br>
           <a href="#" class="btn btn-lg btn-warning button-hover" id="btn">Find out if you`re eligible</a>
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
           <div class="row">
             <div class="col-md-12 text-center">
               <a href="#" class="btn btn-lg btn-info button-hover" id="btn-bk">Back</a>
@@ -92,21 +92,23 @@
                 <a href="#" id="seventeen" class="btn btn-success">17</a>
                 <a href="#portfolioModal6" class="btn btn-danger" data-toggle="modal">18 & over</a>
                 <br><br>
-                <button class="btn-link" data-toggle="modal" data-target="#idea">I`m not sure</a>
+                <a type="button" class="btn btn-default" data-toggle="modal" data-target="#mySecondModal">I`m not sure</a>
               </div> 
               <!-- END OF ARREST QUESTIONS -->
               <!-- RESULTS FADEIN BEGINNING -->
               
-              <div id="resultss" style="display:none;" class="text-center">
+              <div id="resultss" class="text-center">
                 <a href="#" class="btn btn-lg btn-info button-hover" id="btn-backItUpTwo">Back</a>
                   <h2>
                     When were you arrested?
                   </h2>
                 <a href="#portfolioModal5" class="btn btn-info" data-toggle="modal">2014</a>
-                <a href="#modal7" class="btn btn-success" data-toggle="modal">2010-2013</a>
+                <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                  2010-2013
+                </a>
                 <a href="#portfolioModal6" class="btn btn-danger" data-toggle="modal">2009 & Earlier</a>
                 <br></br>
-                <a href="#portfolioModal8" class="btn btn-default" data-toggle="modal">I`m not sure</a>
+                <a type="button" class="btn btn-default" data-toggle="modal" data-target="#mySecondModal">I`m not sure</a>
               </div><!-- END OF RESULTS FADEIN-->
               
             </div><!-- closes col-md-12 tag-->
@@ -173,13 +175,13 @@
             Monday - Friday from 9:00 AM - 4:00 PM (no appointment needed!)<br>
           </p>
           <p>
-            <a href="https://www.google.com/maps/@41.8676037,-87.6802915,3a,75y,260.83h,84.91t/data=!3m6!1e1!3m4!1s8QxanbMDUOBmR2CmwNSeEA!2e0!7i13312!8i6656" class="btn btn-lg btn-warning button-hover">Get Directions Now</a>
-          </p>
-          <p>
             <a style="color: #fff;" href="tel:(312) 229-6359">
               (312) 229-6359
             </a><br><br>
             This is a free service & the lawyers are eager to help you!
+          </p>
+          <p>
+            <a href="https://www.google.com/maps/@41.8676037,-87.6802915,3a,75y,260.83h,84.91t/data=!3m6!1e1!3m4!1s8QxanbMDUOBmR2CmwNSeEA!2e0!7i13312!8i6656" class="btn btn-lg btn-warning button-hover">Get Directions Now</a>
           </p>
       </div> <!-- ENDS COL-LG-12 CLASS -->
     </div>  <!-- ENDS ROW -->
@@ -196,6 +198,121 @@
 </div>
     
 <!--BOOTSTRAP MODALS-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body text-center">
+        <p>
+          Based on your answers, it's unclear if you were arrested as a juvenile or as an adult
+        </p>
+        <p>
+          You will need to get your arrest record (rap sheet) to know for sure. You can get in touch with legal help to find out!
+        </p>
+        <div class="form-style-5">
+        <form>
+        <fieldset>
+        <legend><span class="number">1</span> Your info</legend>
+        <input type="text" name="field1" placeholder="Your Full Name *">
+        <textarea name="field3" placeholder="How did you hear about expunge.io?"></textarea>
+        <input type="email" name="field2" placeholder="Your Email *">
+        <input type="number" name="field3" placeholder="Your Number"></input>
+        <input type="submit" value="Submit" />
+        </fieldset>
+        </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="mySecondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          Juvenile records in Cook County (including Chicago): Contact the Juvenile Expungement Help Desk at (312) 229-6359 and a lawyer will be able to help you.
+
+          To get information about an arrest in Chicago (date, age, juvenile vs. adult), you can get your arrest record (aka rap sheet) at:
+          Records and Services Division of the Chicago Police Department
+          3510 S Michigan, Chicago IL 60653
+          (312)745-5508
+          Mon-Fri 8am-12pm
+        </p>
+        <p>
+          If you were arrested in a different county in IL:
+
+          search for your zip code here and contact the appropriate legal aid organization
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myThirdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body text-center">
+      <div class="page-header">
+  <h2 style="color: #43BDBD">Applying for expungement</h2>
+</div>
+<h3 style="color: #43BDBD">
+  1. Pick up your arrest record, <i>for free</i>, in person at:
+</h3>
+<p>
+<a href="https://www.facebook.com/JuvenileExpungementHelpDesk" target = "_blank">Juvenile Expungement Help Desk</a> at Cook County Juvenile Center<br>
+<i class="fa fa-map-marker fa-fw"></i> <a href="https://www.google.com/maps/dir/''/1100+S+Hamilton+Ave,+Chicago,+IL+60612/data=!4m5!4m4!1m0!1m2!1m1!1s0x880e2d6da3d88edb:0x96bb1955978d2f7f?sa=X&ved=0ahUKEwiKpfefy_bKAhXI6iYKHdhIANoQwwUIJTAB" target="_blank">1100 S Hamilton Ave, Chicago, IL 60612</a><br>
+<i class="fa fa-phone fa-fw"></i> (312) 229-6359<br>
+<i class="fa fa-clock-o fa-fw"></i> Mon/Tues/Fri: 9am-4pm, Wed/Thurs: 9am-12pm<br>
+</p>
+<p>
+  <i class="fa fa-car fa-fw"></i> Parking available adjacent to the courthouse ($2.00)
+</p>
+
+<h3 style="color: #43BDBD">
+  2. Complete Paperwork
+</h3>
+
+<p>
+  You'll need to submit <a href="http://www.illinois.gov/osad/Expungement/Instructions_Forms/Documents/Forms_/ExpungementJuvOption1Form.pdf" target="blank">some forms</a> to the court Clerk's office in the county where your arrest happened:
+  <ol>
+    <li>a Petition to Expunge Juvenile Arrest Record</li>
+    <li>a Notice</li>
+    <li>an Order of Expungement</li>
+  </ol>
+</p>
+<p>
+  The attorneys at the <a href="https://www.facebook.com/JuvenileExpungementHelpDesk" target = "_blank">juvenile expungement help desk</a> can help you fill out and submit your paperwork, for free.
+</p><br><br>
+
+<div class="well well-sm">
+  <p class="h3">
+     If you have any questions, don't hesitate to call free legal help at (312) 229-6359
+  </p>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -408,7 +525,7 @@
             <h2 style="color:#43BDBD" class="text-center">
               Applying for juvenile expungement
             </h2>
-              <p>There are <span class="animated tada">FREE</span> attorneys who can help you get all your information together and get your record expunged! <a href="">Learn more about this!</a> 
+              <p>There are <span class="animated tada">FREE</span> attorneys who can help you get all your information together and get your record expunged! <a href="#" data-toggle="modal" data-target="#myThirdModal" data-dismiss="modal">Learn more about this!</a> 
               </p>
             <button type="button" class="modal-close btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
@@ -432,7 +549,7 @@
               <div class="modal-body">
                 <button type="button" class="navbar-right modal-close btn btn-default" data-dismiss="modal"><i class="fa fa-times fa-4x"></i></button>
                 <div class="page-header">
-                <h2 style="padding-top:50px;"class="text-center">Frequently Asked Questions</h2>
+                <h2 style="padding-top:50px;" class="text-center">Frequently Asked Questions</h2>
               </div>
                   
               <div class="panel-group" id="q7">
@@ -619,11 +736,11 @@
                     
               <h3 class="text-center">Interested in learning more about juvenile justice & expungement? Check out these links:</h3>
               <div class="panel-body">
-                <ul class="link-color">
-                  <p><li><a href="http://www.illinoislegalaid.org/index.cfm?fuseaction=home.dsp_Content&contentID=7064#">Illinois Legal Aid Online</a></li></p>
-                  <p><li><a href="http://rapgenius.com/Illinois-criminal-justice-information-authority-juvenile-criminal-records-lyrics">Illinois Juvenile Criminal Records - explained on Rap Genius</a></li></p>
-                  <p><li><a href="https://vine.co/u/1031276355163230208">Expungement vocabulary - explained on Vine</a></li></p>
-                  <p><li><a href="https://docs.google.com/file/d/0ByNPZcL7VWcVODVkb20wYU5vOVk/edit">Mikva JJC Full Report 2013</a></li></p>
+                <ul>
+                  <h4><li><a class="links" href="http://www.illinoislegalaid.org/index.cfm?fuseaction=home.dsp_Content&contentID=7064#">Illinois Legal Aid Online</a></li></h4>
+                  <h4><li><a class="links" href="http://rapgenius.com/Illinois-criminal-justice-information-authority-juvenile-criminal-records-lyrics">Illinois Juvenile Criminal Records - explained on Rap Genius</a></li></h4>
+                  <h4><li><a class="links" href="https://vine.co/u/1031276355163230208">Expungement vocabulary - explained on Vine</a></li></h4>
+                  <h4><li><a class="links" href="https://docs.google.com/file/d/0ByNPZcL7VWcVODVkb20wYU5vOVk/edit">Mikva JJC Full Report 2013</a></li></h4>
                 </ul>
               </div>
                 <div class="text-center">
@@ -705,6 +822,7 @@
         <input type="email" name="field2" placeholder="Your Email *">
         <input type="number" name="field3" placeholder="Your Number"></input>
         <input type="submit" value="Submit" />
+        </fieldset>
         </form>
         </div>
       </div>
@@ -746,72 +864,38 @@
           </ol>
       </p>
       <p>
-        For legal assistance with your Illinois adult record outside Cook County: information and forms you can fill out are <a href="https://www.illinoislegalaid.org/legal-information/sealing-criminal-record#">here.
+        For legal assistance with your Illinois adult record outside Cook County: information and forms you can fill out are <a href="https://www.illinoislegalaid.org/legal-information/sealing-criminal-record#">here.</a>
       </p>
+      <h3 style="color: #43BDBD">
+        Need help finding a job?
+      </h3>
+      <ul>
+        <li>
+          <a href="http://www.saferfoundation.org/client-resources/makeskeake-an-appointment">Safer Foundation</a>
+        </li>
+        <li>
+          <a href="http://www.nlen.org/">North Lawndale Employment Network</a>
+        </li>
+        <li>
+          <a href="https://xamire.com/jobs-for-felons/illinois">Xamire Felony Friendly Jobs Network</a>
+        </li>
+        <li>
+          <a href="http://m.wikihow.com/Get-a-Job-with-a-Criminal-Record">How to apply for a job</a>
+        </li>
+      </ul>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="#portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content zoomIn">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body text-center">
-      <p>
-        It's likely that you'll be eligible to expunge your record!
-      </p>
-      <p class="text-center">
-        Let's get in touch with Legal Aid!
-      </p>
-      <p class="text-center">
-        Please fill this form out to speak with someone from the Juvenile Expungement Help Desk.
-      </p>
-      <div class="form-style-5">
-        <form>
-        <fieldset>
-        <legend><span class="number">1</span> Your info</legend>
-        <input type="text" name="field1" placeholder="Your Full Name *">
-        <textarea name="field3" placeholder="How did you hear about expunge.io?"></textarea>
-        <input type="email" name="field2" placeholder="Your Email *">
-        <input type="number" name="field3" placeholder="Your Number"></input>
-        <input type="submit" value="Submit" />
-        </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="idea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Privacy Policy</h4>
-      </div>
-      <div class="modal-body">
-        <p>u dont know</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- END OF FACT GENERATOR MODAL -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
   <script src="js/jquery.contact-buttons.min.js"></script>
   <script src="js/demo.min.js"></script>
   <script src="js/jquery.backstrech.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
   <script src="js/main.js"></script>
   <script>
     $(document).ready(function(){$(".logo").addClass("animated tada");$(".navbar-brand").addClass("animated tada");$("#quoteButton").click(function(){$(".title").addClass("animated tada");});});

@@ -489,11 +489,11 @@ section.succeed {
 section.legal {
     background: #0cc;
     color: #fff;
-    height: 1100px;
+    height: 1250px;
 }
 
 .panel {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 .panel h4 {
@@ -515,6 +515,9 @@ section.legal {
 
 #container {
     display: none
+}
+#resultss {
+    display: none;
 }
 
 .disclaimer {
@@ -725,4 +728,7 @@ section.legal {
 .form-style-5 input[type="button"]:hover
 {
     background: #109177;
+}
+.links{
+    color:#fff;
 }
